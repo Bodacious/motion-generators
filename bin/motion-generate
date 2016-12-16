@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require "rubygems"
+require "bundler/setup"
+require "motion/generators"
+
+Motion::Generate.start
+
+
+# command_name = ARGV.shift
+#
+# # If no argument/-h/--help is passed to motion-generate command, then it generates the
+# #   help associated.
+# if [nil, "-h", "--help"].include?(command_name)
+#   Motion::Generators.help 'generate'
+#   exit
+# end
+#
+#
+#
+# case command_name
+# when "list"
+#   exec("thor list") and exit
+# else
+#   exec("thor ios:#{generator_name} #{ARGV.join("\s")}") and exit
+# end

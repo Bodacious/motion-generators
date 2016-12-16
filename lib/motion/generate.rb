@@ -25,7 +25,6 @@ module Motion
     desc "ui_view_controller", "Creates a UIViewController subclass in app/controllers"
     def ui_view_controller(name)
       @name = name
-      @parent_class_name = options[:parent_class].camelize
       template "ui_view_controller.rb.erb", "app/controllers/#{name}_controller.rb"
     end
 
@@ -39,7 +38,6 @@ module Motion
     desc "ui_table_view_controller", "Creates a UITableViewController subclass in app/controllers"
     def ui_table_view_controller(name)
       @name = name
-      @parent_class_name = options[:parent_class].camelize
       template "ui_view_controller.rb.erb", "app/controllers/#{name}_controller.rb"
     end
 
@@ -49,11 +47,11 @@ module Motion
 
 
     def parent_class_name
-      @parent_class_name
+      options[:parent_class].camelize
     end
 
     def class_name
-      @name.camelize
+      "%sController" % @name.camelize
     end
 
   end

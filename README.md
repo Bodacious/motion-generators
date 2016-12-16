@@ -41,7 +41,7 @@ To see a full list of what's available, do
     $ motion-generate ui_table_view_controller skateboards
 
 
-Will generate a file named **app/controllers/skateboards_controller.rb** that looks something like [this template](lib/tempates/ui_table_view_controller.rb.erb)
+Will generate a file named **app/controllers/skateboards_controller.rb** that looks something like [this template](lib/motion/templates/ui_table_view_controller.rb.erb)
 
 ## Contributing
 

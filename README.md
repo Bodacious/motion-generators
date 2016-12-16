@@ -36,19 +36,22 @@ To see a full list of what's available, do
       motion-generate ui_table_view_controller  # Creates a UIViewController subclass in app/controllers
       motion-generate ui_view_controller        # Creates a UIViewController subclass in app/controllers
 
+### Example
 
-## Development
+    $ motion-generate ui_table_view_controller skateboards
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Will generate a file named **app/controllers/skateboards_controller.rb** that looks something like [this template](lib/tempates/ui_table_view_controller.rb.erb)
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/motion-generators.
+Bug reports and pull requests are welcome on GitHub at https://github.com/KatanaCode/motion-generators.
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+## Credit
+
+Created by [Katana—App developers in Edinburgh, Scotland](http://katanacode.com)
